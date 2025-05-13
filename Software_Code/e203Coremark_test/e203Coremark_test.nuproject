@@ -1,0 +1,23 @@
+SDK_CONFIG: 
+   Debug: 
+      optlevel: O3
+      archext: 
+      extra_cxxflags: 
+      cmodel: medany
+      extra_commonflags: -funroll-all-loops -finline-limit=600 -ftree-dominator-opts -fno-if-conversion2
+         -fselective-scheduling -fno-code-hoisting -funroll-loops -finline-functions -falign-functions=4
+         -falign-jumps=4 -falign-loops=4
+      abi: ilp32f
+      stdclib: newlib_small
+      toolchain: gnu
+      core: E203
+      download: ILM
+      extra_asmflags: 
+      mtune: default
+      arch: rv32imafc
+      extra_cflags: 
+      extra_ldflags: 
+NPK_PACKS: 
+-  owner: nuclei
+   name: sdk-hbird_sdk
+   version: 0.1.3
