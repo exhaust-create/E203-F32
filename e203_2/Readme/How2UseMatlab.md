@@ -4,7 +4,7 @@
 
 在如下路径中找到文件 *matlab_serial.m* ：
 ```
-matlab串口小助手:
+串口小助手:
 |-- matlab_serial.m
 ```
 用 Matlab 打开文件，找到如下代码;
