@@ -1,0 +1,1567 @@
+
+*** Running vivado
+    with args -log system.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source system.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source system.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental E:/Vivado_Workspace/e203_2/e203/e203.srcs/utils_1/imports/synth_1/sirv_gnrl_icb2ahbl.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from E:/Vivado_Workspace/e203_2/e203/e203.srcs/utils_1/imports/synth_1/sirv_gnrl_icb2ahbl.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top system -part xc7a200tfbg484-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Device 21-403] Loading part xc7a200tfbg484-2
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 24584
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [E:/Vivado/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+INFO: [Synth 8-11241] undeclared symbol 'exp_a', assumed default net type 'wire' [E:/Vivado_Workspace/e203_2/e203/e203.srcs/sources_1/imports/sources_1/imports/Floating-Point-ALU-in-Verilog-master/Division/Addition-Subtraction.v:45]
+INFO: [Synth 8-11241] undeclared symbol 'exp_b', assumed default net type 'wire' [E:/Vivado_Workspace/e203_2/e203/e203.srcs/sources_1/imports/sources_1/imports/Floating-Point-ALU-in-Verilog-master/Division/Addition-Subtraction.v:46]
+INFO: [Synth 8-11241] undeclared symbol 'perform', assumed default net type 'wire' [E:/Vivado_Workspace/e203_2/e203/e203.srcs/sources_1/imports/sources_1/imports/Floating-Point-ALU-in-Verilog-master/Division/Addition-Subtraction.v:69]
+WARNING: [Synth 8-11065] parameter 'RBR' becomes localparam in 'apb_uart_sv' with formal parameter declaration list [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/perips/apb_uart/apb_uart.v:35]
+WARNING: [Synth 8-11065] parameter 'THR' becomes localparam in 'apb_uart_sv' with formal parameter declaration list [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/perips/apb_uart/apb_uart.v:35]
+WARNING: [Synth 8-11065] parameter 'DLL' becomes localparam in 'apb_uart_sv' with formal parameter declaration list [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/perips/apb_uart/apb_uart.v:35]
+WARNING: [Synth 8-11065] parameter 'IER' becomes localparam in 'apb_uart_sv' with formal parameter declaration list [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/perips/apb_uart/apb_uart.v:35]
+WARNING: [Synth 8-11065] parameter 'DLM' becomes localparam in 'apb_uart_sv' with formal parameter declaration list [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/perips/apb_uart/apb_uart.v:35]
+WARNING: [Synth 8-11065] parameter 'IIR' becomes localparam in 'apb_uart_sv' with formal parameter declaration list [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/perips/apb_uart/apb_uart.v:35]
+WARNING: [Synth 8-11065] parameter 'FCR' becomes localparam in 'apb_uart_sv' with formal parameter declaration list [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/perips/apb_uart/apb_uart.v:36]
+WARNING: [Synth 8-11065] parameter 'LCR' becomes localparam in 'apb_uart_sv' with formal parameter declaration list [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/perips/apb_uart/apb_uart.v:36]
+WARNING: [Synth 8-11065] parameter 'MCR' becomes localparam in 'apb_uart_sv' with formal parameter declaration list [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/perips/apb_uart/apb_uart.v:36]
+WARNING: [Synth 8-11065] parameter 'LSR' becomes localparam in 'apb_uart_sv' with formal parameter declaration list [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/perips/apb_uart/apb_uart.v:36]
+WARNING: [Synth 8-11065] parameter 'MSR' becomes localparam in 'apb_uart_sv' with formal parameter declaration list [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/perips/apb_uart/apb_uart.v:36]
+WARNING: [Synth 8-11065] parameter 'SCR' becomes localparam in 'apb_uart_sv' with formal parameter declaration list [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/perips/apb_uart/apb_uart.v:36]
+WARNING: [Synth 8-11065] parameter 'TX_FIFO_DEPTH' becomes localparam in 'apb_uart_sv' with formal parameter declaration list [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/perips/apb_uart/apb_uart.v:38]
+WARNING: [Synth 8-11065] parameter 'RX_FIFO_DEPTH' becomes localparam in 'apb_uart_sv' with formal parameter declaration list [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/perips/apb_uart/apb_uart.v:39]
+INFO: [Synth 8-11241] undeclared symbol 'dut_io_pads_aon_pmu_vddpaden_i_ival', assumed default net type 'wire' [E:/Vivado_Workspace/e203_2/Source Code/system.v:352]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1391.848 ; gain = 414.574
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'system' [E:/Vivado_Workspace/e203_2/Source Code/system.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mmcm' [E:/Vivado_Workspace/e203_2/e203/e203.runs/synth_1/.Xil/Vivado-23008-MyLaptop/realtime/mmcm_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mmcm' (0#1) [E:/Vivado_Workspace/e203_2/e203/e203.runs/synth_1/.Xil/Vivado-23008-MyLaptop/realtime/mmcm_stub.v:5]
+WARNING: [Synth 8-7071] port 'clk_out1' of module 'mmcm' is unconnected for instance 'ip_mmcm' [E:/Vivado_Workspace/e203_2/Source Code/system.v:98]
+WARNING: [Synth 8-7023] instance 'ip_mmcm' of module 'mmcm' has 5 connections declared, but only 4 given [E:/Vivado_Workspace/e203_2/Source Code/system.v:98]
+INFO: [Synth 8-6157] synthesizing module 'reset_sys' [E:/Vivado_Workspace/e203_2/e203/e203.runs/synth_1/.Xil/Vivado-23008-MyLaptop/realtime/reset_sys_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'reset_sys' (0#1) [E:/Vivado_Workspace/e203_2/e203/e203.runs/synth_1/.Xil/Vivado-23008-MyLaptop/realtime/reset_sys_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'PULLUP' [E:/Vivado/Vivado/2022.2/scripts/rt/data/unisim_comp.v:123418]
+INFO: [Synth 8-6155] done synthesizing module 'PULLUP' (0#1) [E:/Vivado/Vivado/2022.2/scripts/rt/data/unisim_comp.v:123418]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [E:/Vivado/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902]
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (0#1) [E:/Vivado/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF__parameterized0' [E:/Vivado/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF__parameterized0' (0#1) [E:/Vivado/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902]
+INFO: [Synth 8-6157] synthesizing module 'e203_soc_top' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/soc/e203_soc_top.v:19]
+INFO: [Synth 8-6157] synthesizing module 'e203_subsys_top' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/subsys/e203_subsys_top.v:31]
+INFO: [Synth 8-6157] synthesizing module 'e203_subsys_main' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/subsys/e203_subsys_main.v:32]
+INFO: [Synth 8-6157] synthesizing module 'sirv_ResetCatchAndSync_2' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/perips/sirv_ResetCatchAndSync_2.v:19]
+INFO: [Synth 8-6157] synthesizing module 'sirv_AsyncResetRegVec_129' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/perips/sirv_AsyncResetRegVec_129.v:19]
+INFO: [Synth 8-6157] synthesizing module 'sirv_AsyncResetReg' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/perips/sirv_AsyncResetReg.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_AsyncResetReg' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/perips/sirv_AsyncResetReg.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_AsyncResetRegVec_129' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/perips/sirv_AsyncResetRegVec_129.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_ResetCatchAndSync_2' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/perips/sirv_ResetCatchAndSync_2.v:19]
+INFO: [Synth 8-6157] synthesizing module 'e203_subsys_hclkgen' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/subsys/e203_subsys_hclkgen.v:31]
+INFO: [Synth 8-6157] synthesizing module 'e203_subsys_pll' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/subsys/e203_subsys_pll.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'e203_subsys_pll' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/subsys/e203_subsys_pll.v:31]
+INFO: [Synth 8-6157] synthesizing module 'e203_subsys_hclkgen_rstsync' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/subsys/e203_subsys_hclkgen_rstsync.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'e203_subsys_hclkgen_rstsync' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/subsys/e203_subsys_hclkgen_rstsync.v:29]
+INFO: [Synth 8-6157] synthesizing module 'e203_subsys_pllclkdiv' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/subsys/e203_subsys_pllclkdiv.v:31]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dfflr' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_dffs.v:87]
+	Parameter DW bound to: 6 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dfflr' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_dffs.v:87]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dfflr__parameterized0' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_dffs.v:87]
+	Parameter DW bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dfflr__parameterized0' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_dffs.v:87]
+INFO: [Synth 8-6157] synthesizing module 'e203_clkgate' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_clkgate.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'e203_clkgate' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_clkgate.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'e203_subsys_pllclkdiv' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/subsys/e203_subsys_pllclkdiv.v:31]
+INFO: [Synth 8-6157] synthesizing module 'e203_subsys_gfcm' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/subsys/e203_subsys_gfcm.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'e203_subsys_gfcm' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/subsys/e203_subsys_gfcm.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'e203_subsys_hclkgen' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/subsys/e203_subsys_hclkgen.v:31]
+INFO: [Synth 8-6157] synthesizing module 'e203_cpu_top' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_cpu_top.v:30]
+INFO: [Synth 8-6157] synthesizing module 'e203_cpu' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_cpu.v:30]
+	Parameter MASTER bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'e203_reset_ctrl' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_reset_ctrl.v:29]
+	Parameter MASTER bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'e203_reset_ctrl' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_reset_ctrl.v:29]
+INFO: [Synth 8-6157] synthesizing module 'e203_clk_ctrl' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_clk_ctrl.v:30]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffr' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_dffs.v:209]
+	Parameter DW bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffr' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_dffs.v:209]
+INFO: [Synth 8-6155] done synthesizing module 'e203_clk_ctrl' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_clk_ctrl.v:30]
+INFO: [Synth 8-6157] synthesizing module 'e203_irq_sync' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_irq_sync.v:29]
+	Parameter MASTER bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_sync' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_bufs.v:99]
+	Parameter DP bound to: 2 - type: integer 
+	Parameter DW bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_sync' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_bufs.v:99]
+INFO: [Synth 8-6155] done synthesizing module 'e203_irq_sync' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_irq_sync.v:29]
+INFO: [Synth 8-6157] synthesizing module 'e203_subsys_nice_core' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/subsys/e203_subsys_nice_core.v:28]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dfflr__parameterized1' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_dffs.v:87]
+	Parameter DW bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dfflr__parameterized1' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_dffs.v:87]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dfflr__parameterized2' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_dffs.v:87]
+	Parameter DW bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dfflr__parameterized2' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_dffs.v:87]
+INFO: [Synth 8-6155] done synthesizing module 'e203_subsys_nice_core' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/subsys/e203_subsys_nice_core.v:28]
+INFO: [Synth 8-6157] synthesizing module 'e203_core' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_core.v:30]
+INFO: [Synth 8-6157] synthesizing module 'e203_ifu' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_ifu.v:29]
+INFO: [Synth 8-6157] synthesizing module 'e203_ifu_ifetch' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_ifu_ifetch.v:29]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffrs' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_dffs.v:177]
+	Parameter DW bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffrs' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_dffs.v:177]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dfflr__parameterized3' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_dffs.v:87]
+	Parameter DW bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dfflr__parameterized3' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_dffs.v:87]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dfflr__parameterized4' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_dffs.v:87]
+	Parameter DW bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dfflr__parameterized4' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_dffs.v:87]
+INFO: [Synth 8-6157] synthesizing module 'e203_ifu_minidec' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_ifu_minidec.v:28]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu_decode' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_exu_decode.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu_decode' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_exu_decode.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'e203_ifu_minidec' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_ifu_minidec.v:28]
+INFO: [Synth 8-6157] synthesizing module 'e203_ifu_litebpu' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_ifu_litebpu.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'e203_ifu_litebpu' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_ifu_litebpu.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'e203_ifu_ifetch' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_ifu_ifetch.v:29]
+INFO: [Synth 8-6157] synthesizing module 'e203_ifu_ift2icb' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_ifu_ift2icb.v:30]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_bypbuf' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_bufs.v:306]
+	Parameter DP bound to: 1 - type: integer 
+	Parameter DW bound to: 33 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_fifo' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_bufs.v:381]
+	Parameter CUT_READY bound to: 1 - type: integer 
+	Parameter DP bound to: 1 - type: integer 
+	Parameter DW bound to: 33 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffl' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_dffs.v:133]
+	Parameter DW bound to: 33 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffl' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_dffs.v:133]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dfflrs' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_dffs.v:40]
+	Parameter DW bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dfflrs' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_dffs.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_fifo' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_bufs.v:381]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_bypbuf' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_bufs.v:306]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffl__parameterized0' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_dffs.v:133]
+	Parameter DW bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffl__parameterized0' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_dffs.v:133]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffl__parameterized1' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_dffs.v:133]
+	Parameter DW bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffl__parameterized1' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_dffs.v:133]
+INFO: [Synth 8-6155] done synthesizing module 'e203_ifu_ift2icb' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_ifu_ift2icb.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'e203_ifu' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_ifu.v:29]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_exu.v:29]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu_regfile' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_exu_regfile.v:28]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffl__parameterized2' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_dffs.v:133]
+	Parameter DW bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffl__parameterized2' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_dffs.v:133]
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu_regfile' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_exu_regfile.v:28]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu_fregfile' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_exu_fregfile.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu_fregfile' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_exu_fregfile.v:12]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu_disp' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_exu_disp.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu_disp' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_exu_disp.v:30]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu_oitf' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_exu_oitf.v:29]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffl__parameterized3' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_dffs.v:133]
+	Parameter DW bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffl__parameterized3' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_dffs.v:133]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffl__parameterized4' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_dffs.v:133]
+	Parameter DW bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffl__parameterized4' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_dffs.v:133]
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu_oitf' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_exu_oitf.v:29]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu_alu' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_exu_alu.v:33]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu_alu_fpuctrl' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_exu_alu_fpuctrl.v:13]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_fifo__parameterized0' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_bufs.v:381]
+	Parameter CUT_READY bound to: 0 - type: integer 
+	Parameter MSKO bound to: 0 - type: integer 
+	Parameter DP bound to: 1 - type: integer 
+	Parameter DW bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_fifo__parameterized0' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_bufs.v:381]
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu_alu_fpuctrl' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_exu_alu_fpuctrl.v:13]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu_nice' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_exu_nice.v:30]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_fifo__parameterized1' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_bufs.v:381]
+	Parameter CUT_READY bound to: 1 - type: integer 
+	Parameter DP bound to: 4 - type: integer 
+	Parameter DW bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dfflr__parameterized5' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_dffs.v:87]
+	Parameter DW bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dfflr__parameterized5' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_dffs.v:87]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dfflr__parameterized6' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_dffs.v:87]
+	Parameter DW bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dfflr__parameterized6' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_dffs.v:87]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_fifo__parameterized1' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_bufs.v:381]
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu_nice' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_exu_nice.v:30]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu_alu_csrctrl' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_exu_alu_csrctrl.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu_alu_csrctrl' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_exu_alu_csrctrl.v:29]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu_alu_bjp' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_exu_alu_bjp.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu_alu_bjp' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_exu_alu_bjp.v:32]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu_alu_lsuagu' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_exu_alu_lsuagu.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu_alu_lsuagu' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_exu_alu_lsuagu.v:32]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu_alu_rglr' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_exu_alu_rglr.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu_alu_rglr' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_exu_alu_rglr.v:30]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu_alu_muldiv' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_exu_alu_muldiv.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu_alu_muldiv' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_exu_alu_muldiv.v:32]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu_alu_dpath' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_exu_alu_dpath.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu_alu_dpath' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_exu_alu_dpath.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu_alu' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_exu_alu.v:33]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu_longpwbck' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_exu_longpwbck.v:30]
+WARNING: [Synth 8-693] zero replication count - replication ignored [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_exu_longpwbck.v:159]
+WARNING: [Synth 8-693] zero replication count - replication ignored [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_exu_longpwbck.v:162]
+WARNING: [Synth 8-693] zero replication count - replication ignored [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_exu_longpwbck.v:165]
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu_longpwbck' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_exu_longpwbck.v:30]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu_wbck' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_exu_wbck.v:30]
+WARNING: [Synth 8-693] zero replication count - replication ignored [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_exu_wbck.v:97]
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu_wbck' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_exu_wbck.v:30]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu_commit' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_exu_commit.v:31]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu_branchslv' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_exu_branchslv.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu_branchslv' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_exu_branchslv.v:30]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu_excp' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_exu_excp.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu_excp' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_exu_excp.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu_commit' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_exu_commit.v:31]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu_csr' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_exu_csr.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu_csr' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_exu_csr.v:29]
+INFO: [Synth 8-6157] synthesizing module 'e203_exu_fpu' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_exu_fpu.v:10]
+INFO: [Synth 8-6157] synthesizing module 'FALU' [E:/Vivado_Workspace/e203_2/e203/e203.srcs/sources_1/imports/sources_1/new/FALU.v:14]
+INFO: [Synth 8-6157] synthesizing module 'Addition_Subtraction' [E:/Vivado_Workspace/e203_2/e203/e203.srcs/sources_1/imports/sources_1/imports/Floating-Point-ALU-in-Verilog-master/Division/Addition-Subtraction.v:12]
+INFO: [Synth 8-6157] synthesizing module 'priority_encoder' [E:/Vivado_Workspace/e203_2/e203/e203.srcs/sources_1/imports/sources_1/imports/Floating-Point-ALU-in-Verilog-master/Division/Priority Encoder.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'priority_encoder' (0#1) [E:/Vivado_Workspace/e203_2/e203/e203.srcs/sources_1/imports/sources_1/imports/Floating-Point-ALU-in-Verilog-master/Division/Priority Encoder.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'Addition_Subtraction' (0#1) [E:/Vivado_Workspace/e203_2/e203/e203.srcs/sources_1/imports/sources_1/imports/Floating-Point-ALU-in-Verilog-master/Division/Addition-Subtraction.v:12]
+INFO: [Synth 8-6157] synthesizing module 'Multiplication' [E:/Vivado_Workspace/e203_2/e203/e203.srcs/sources_1/imports/sources_1/imports/Floating-Point-ALU-in-Verilog-master/Multiplication/Multiplication.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'Multiplication' (0#1) [E:/Vivado_Workspace/e203_2/e203/e203.srcs/sources_1/imports/sources_1/imports/Floating-Point-ALU-in-Verilog-master/Multiplication/Multiplication.v:11]
+INFO: [Synth 8-6157] synthesizing module 'QDiv_QSqrt' [E:/Vivado_Workspace/e203_2/e203/e203.srcs/sources_1/imports/sources_1/new/QDiv_QSqrt.v:14]
+INFO: [Synth 8-6157] synthesizing module 'IterationQRSqrt' [E:/Vivado_Workspace/e203_2/e203/e203.srcs/sources_1/imports/sources_1/imports/Division/IterationQRSqrt.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'IterationQRSqrt' (0#1) [E:/Vivado_Workspace/e203_2/e203/e203.srcs/sources_1/imports/sources_1/imports/Division/IterationQRSqrt.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'QDiv_QSqrt' (0#1) [E:/Vivado_Workspace/e203_2/e203/e203.srcs/sources_1/imports/sources_1/new/QDiv_QSqrt.v:14]
+INFO: [Synth 8-6157] synthesizing module 'Floating_Point_to_Integer' [E:/Vivado_Workspace/e203_2/e203/e203.srcs/sources_1/imports/sources_1/imports/ALU/Converter.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'Floating_Point_to_Integer' (0#1) [E:/Vivado_Workspace/e203_2/e203/e203.srcs/sources_1/imports/sources_1/imports/ALU/Converter.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Int_to_Fp' [E:/Vivado_Workspace/e203_2/e203/e203.srcs/sources_1/imports/sources_1/new/Int_to_Fp.v:23]
+WARNING: [Synth 8-567] referenced signal 'usint2fp' should be on the sensitivity list [E:/Vivado_Workspace/e203_2/e203/e203.srcs/sources_1/imports/sources_1/new/Int_to_Fp.v:32]
+WARNING: [Synth 8-567] referenced signal 'a_operand' should be on the sensitivity list [E:/Vivado_Workspace/e203_2/e203/e203.srcs/sources_1/imports/sources_1/new/Int_to_Fp.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'Int_to_Fp' (0#1) [E:/Vivado_Workspace/e203_2/e203/e203.srcs/sources_1/imports/sources_1/new/Int_to_Fp.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'FALU' (0#1) [E:/Vivado_Workspace/e203_2/e203/e203.srcs/sources_1/imports/sources_1/new/FALU.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu_fpu' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_exu_fpu.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'e203_exu' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_exu.v:29]
+INFO: [Synth 8-6157] synthesizing module 'e203_lsu' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_lsu.v:28]
+INFO: [Synth 8-6157] synthesizing module 'e203_lsu_ctrl' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_lsu_ctrl.v:28]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_icb_arbt' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_icbs.v:37]
+	Parameter AW bound to: 32 - type: integer 
+	Parameter DW bound to: 32 - type: integer 
+	Parameter USR_W bound to: 40 - type: integer 
+	Parameter ARBT_SCHEME bound to: 0 - type: integer 
+	Parameter FIFO_OUTS_NUM bound to: 1 - type: integer 
+	Parameter FIFO_CUT_READY bound to: 0 - type: integer 
+	Parameter ARBT_NUM bound to: 2 - type: integer 
+	Parameter ALLOW_0CYCL_RSP bound to: 0 - type: integer 
+	Parameter ARBT_PTR_W bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_pipe_stage' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_bufs.v:28]
+	Parameter CUT_READY bound to: 0 - type: integer 
+	Parameter DP bound to: 1 - type: integer 
+	Parameter DW bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_pipe_stage' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_bufs.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_icb_arbt' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_icbs.v:37]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_pipe_stage__parameterized0' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_bufs.v:28]
+	Parameter CUT_READY bound to: 0 - type: integer 
+	Parameter DP bound to: 1 - type: integer 
+	Parameter DW bound to: 45 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffl__parameterized5' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_dffs.v:133]
+	Parameter DW bound to: 45 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffl__parameterized5' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_dffs.v:133]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_pipe_stage__parameterized0' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_bufs.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'e203_lsu_ctrl' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_lsu_ctrl.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'e203_lsu' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_lsu.v:28]
+INFO: [Synth 8-6157] synthesizing module 'e203_biu' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_biu.v:29]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_icb_arbt__parameterized0' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_icbs.v:37]
+	Parameter AW bound to: 32 - type: integer 
+	Parameter DW bound to: 32 - type: integer 
+	Parameter USR_W bound to: 1 - type: integer 
+	Parameter ARBT_SCHEME bound to: 0 - type: integer 
+	Parameter FIFO_OUTS_NUM bound to: 1 - type: integer 
+	Parameter FIFO_CUT_READY bound to: 1 - type: integer 
+	Parameter ARBT_NUM bound to: 2 - type: integer 
+	Parameter ALLOW_0CYCL_RSP bound to: 0 - type: integer 
+	Parameter ARBT_PTR_W bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_pipe_stage__parameterized1' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_bufs.v:28]
+	Parameter CUT_READY bound to: 1 - type: integer 
+	Parameter DP bound to: 1 - type: integer 
+	Parameter DW bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_pipe_stage__parameterized1' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_bufs.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_icb_arbt__parameterized0' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_icbs.v:37]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_icb_buffer' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_icbs.v:351]
+	Parameter OUTS_CNT_W bound to: 1 - type: integer 
+	Parameter AW bound to: 32 - type: integer 
+	Parameter DW bound to: 32 - type: integer 
+	Parameter CMD_CUT_READY bound to: 1 - type: integer 
+	Parameter RSP_CUT_READY bound to: 1 - type: integer 
+	Parameter CMD_DP bound to: 1 - type: integer 
+	Parameter RSP_DP bound to: 1 - type: integer 
+	Parameter USR_W bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_fifo__parameterized2' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_bufs.v:381]
+	Parameter CUT_READY bound to: 1 - type: integer 
+	Parameter MSKO bound to: 0 - type: integer 
+	Parameter DP bound to: 1 - type: integer 
+	Parameter DW bound to: 78 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffl__parameterized6' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_dffs.v:133]
+	Parameter DW bound to: 78 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffl__parameterized6' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_dffs.v:133]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_fifo__parameterized2' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_bufs.v:381]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_fifo__parameterized3' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_bufs.v:381]
+	Parameter CUT_READY bound to: 1 - type: integer 
+	Parameter MSKO bound to: 0 - type: integer 
+	Parameter DP bound to: 1 - type: integer 
+	Parameter DW bound to: 35 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffl__parameterized7' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_dffs.v:133]
+	Parameter DW bound to: 35 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffl__parameterized7' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_dffs.v:133]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_fifo__parameterized3' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_bufs.v:381]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_icb_buffer' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_icbs.v:351]
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_icb_splt' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_icbs.v:648]
+	Parameter AW bound to: 32 - type: integer 
+	Parameter DW bound to: 32 - type: integer 
+	Parameter FIFO_OUTS_NUM bound to: 1 - type: integer 
+	Parameter FIFO_CUT_READY bound to: 1 - type: integer 
+	Parameter SPLT_NUM bound to: 6 - type: integer 
+	Parameter SPLT_PTR_1HOT bound to: 1 - type: integer 
+	Parameter SPLT_PTR_W bound to: 6 - type: integer 
+	Parameter ALLOW_DIFF bound to: 0 - type: integer 
+	Parameter ALLOW_0CYCL_RSP bound to: 1 - type: integer 
+	Parameter USR_W bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_pipe_stage__parameterized2' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_bufs.v:28]
+	Parameter CUT_READY bound to: 1 - type: integer 
+	Parameter DP bound to: 1 - type: integer 
+	Parameter DW bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sirv_gnrl_dffl__parameterized8' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_dffs.v:133]
+	Parameter DW bound to: 6 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffl__parameterized8' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_dffs.v:133]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_pipe_stage__parameterized2' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_bufs.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_icb_splt' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_icbs.v:648]
+INFO: [Synth 8-6155] done synthesizing module 'e203_biu' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_biu.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'e203_core' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_core.v:30]
+INFO: [Synth 8-6157] synthesizing module 'e203_itcm_ctrl' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/core/e203_itcm_ctrl.v:31]
+INFO: [Common 17-14] Message 'Synth 8-6157' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+	Parameter AW bound to: 18 - type: integer 
+	Parameter USR_W bound to: 1 - type: integer 
+	Parameter FIFO_OUTS_NUM bound to: 1 - type: integer 
+	Parameter FIFO_CUT_READY bound to: 0 - type: integer 
+	Parameter X_W bound to: 32 - type: integer 
+	Parameter Y_W bound to: 64 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_icb_n2w' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_icbs.v:503]
+	Parameter AW bound to: 18 - type: integer 
+	Parameter DW bound to: 64 - type: integer 
+	Parameter USR_W bound to: 1 - type: integer 
+	Parameter ARBT_SCHEME bound to: 0 - type: integer 
+	Parameter FIFO_OUTS_NUM bound to: 1 - type: integer 
+	Parameter FIFO_CUT_READY bound to: 0 - type: integer 
+	Parameter ARBT_NUM bound to: 2 - type: integer 
+	Parameter ALLOW_0CYCL_RSP bound to: 0 - type: integer 
+	Parameter ARBT_PTR_W bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_icb_arbt__parameterized1' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_icbs.v:37]
+	Parameter DW bound to: 64 - type: integer 
+	Parameter MW bound to: 8 - type: integer 
+	Parameter AW bound to: 18 - type: integer 
+	Parameter AW_LSB bound to: 3 - type: integer 
+	Parameter USR_W bound to: 2 - type: integer 
+	Parameter DP bound to: 1 - type: integer 
+	Parameter DW bound to: 93 - type: integer 
+	Parameter CUT_READY bound to: 1 - type: integer 
+	Parameter DP bound to: 1 - type: integer 
+	Parameter DW bound to: 93 - type: integer 
+	Parameter DW bound to: 93 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_dffl__parameterized9' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_dffs.v:133]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_fifo__parameterized4' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_bufs.v:381]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_bypbuf__parameterized0' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_bufs.v:306]
+	Parameter DW bound to: 64 - type: integer 
+	Parameter MW bound to: 8 - type: integer 
+	Parameter AW bound to: 18 - type: integer 
+	Parameter AW_LSB bound to: 3 - type: integer 
+	Parameter USR_W bound to: 2 - type: integer 
+	Parameter CUT_READY bound to: 0 - type: integer 
+	Parameter DP bound to: 1 - type: integer 
+	Parameter DW bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sirv_gnrl_pipe_stage__parameterized3' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_gnrl_bufs.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'sirv_1cyc_sram_ctrl' (0#1) [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/general/sirv_1cyc_sram_ctrl.v:29]
+INFO: [Common 17-14] Message 'Synth 8-6155' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+	Parameter AW bound to: 18 - type: integer 
+	Parameter DW bound to: 32 - type: integer 
+	Parameter USR_W bound to: 1 - type: integer 
+	Parameter ARBT_SCHEME bound to: 0 - type: integer 
+	Parameter FIFO_OUTS_NUM bound to: 1 - type: integer 
+	Parameter FIFO_CUT_READY bound to: 0 - type: integer 
+	Parameter ARBT_NUM bound to: 2 - type: integer 
+	Parameter ALLOW_0CYCL_RSP bound to: 0 - type: integer 
+	Parameter ARBT_PTR_W bound to: 1 - type: integer 
+	Parameter DW bound to: 32 - type: integer 
+	Parameter MW bound to: 4 - type: integer 
+	Parameter AW bound to: 18 - type: integer 
+	Parameter AW_LSB bound to: 2 - type: integer 
+	Parameter USR_W bound to: 1 - type: integer 
+	Parameter DP bound to: 1 - type: integer 
+	Parameter DW bound to: 56 - type: integer 
+	Parameter CUT_READY bound to: 1 - type: integer 
+	Parameter DP bound to: 1 - type: integer 
+	Parameter DW bound to: 56 - type: integer 
+	Parameter DW bound to: 56 - type: integer 
+	Parameter DW bound to: 32 - type: integer 
+	Parameter MW bound to: 4 - type: integer 
+	Parameter AW bound to: 18 - type: integer 
+	Parameter AW_LSB bound to: 2 - type: integer 
+	Parameter USR_W bound to: 1 - type: integer 
+	Parameter DP bound to: 32768 - type: integer 
+	Parameter DW bound to: 64 - type: integer 
+	Parameter FORCE_X2ZERO bound to: 0 - type: integer 
+	Parameter MW bound to: 8 - type: integer 
+	Parameter AW bound to: 15 - type: integer 
+	Parameter DP bound to: 32768 - type: integer 
+	Parameter FORCE_X2ZERO bound to: 1'b0 
+	Parameter DW bound to: 64 - type: integer 
+	Parameter MW bound to: 8 - type: integer 
+	Parameter AW bound to: 15 - type: integer 
+	Parameter DP bound to: 65536 - type: integer 
+	Parameter DW bound to: 32 - type: integer 
+	Parameter FORCE_X2ZERO bound to: 1 - type: integer 
+	Parameter MW bound to: 4 - type: integer 
+	Parameter AW bound to: 16 - type: integer 
+	Parameter DP bound to: 65536 - type: integer 
+	Parameter FORCE_X2ZERO bound to: 1'b0 
+	Parameter DW bound to: 32 - type: integer 
+	Parameter MW bound to: 4 - type: integer 
+	Parameter AW bound to: 16 - type: integer 
+	Parameter PLIC_PRIO_WIDTH bound to: 3 - type: integer 
+	Parameter PLIC_IRQ_NUM bound to: 17 - type: integer 
+	Parameter PLIC_IRQ_NUM_LOG2 bound to: 6 - type: integer 
+	Parameter PLIC_ICB_RSP_FLOP bound to: 1 - type: integer 
+	Parameter PLIC_IRQ_I_FLOP bound to: 1 - type: integer 
+	Parameter PLIC_IRQ_O_FLOP bound to: 1 - type: integer 
+	Parameter DW bound to: 17 - type: integer 
+	Parameter DW bound to: 6 - type: integer 
+	Parameter DW bound to: 3 - type: integer 
+	Parameter CUT_READY bound to: 1 - type: integer 
+	Parameter DP bound to: 1 - type: integer 
+	Parameter DW bound to: 32 - type: integer 
+	Parameter ICB_FIFO_DP bound to: 2 - type: integer 
+	Parameter ICB_FIFO_CUT_READY bound to: 1 - type: integer 
+	Parameter AW bound to: 32 - type: integer 
+	Parameter DW bound to: 32 - type: integer 
+	Parameter SPLT_FIFO_OUTS_NUM bound to: 1 - type: integer 
+	Parameter SPLT_FIFO_CUT_READY bound to: 1 - type: integer 
+	Parameter O0_BASE_ADDR bound to: 268435456 - type: integer 
+	Parameter O0_BASE_REGION_LSB bound to: 15 - type: integer 
+	Parameter O1_BASE_ADDR bound to: 268468224 - type: integer 
+	Parameter O1_BASE_REGION_LSB bound to: 12 - type: integer 
+	Parameter O2_BASE_ADDR bound to: 268509184 - type: integer 
+	Parameter O2_BASE_REGION_LSB bound to: 12 - type: integer 
+	Parameter O3_BASE_ADDR bound to: 268513280 - type: integer 
+	Parameter O3_BASE_REGION_LSB bound to: 12 - type: integer 
+	Parameter O4_BASE_ADDR bound to: 268517376 - type: integer 
+	Parameter O4_BASE_REGION_LSB bound to: 12 - type: integer 
+	Parameter O5_BASE_ADDR bound to: 268521472 - type: integer 
+	Parameter O5_BASE_REGION_LSB bound to: 12 - type: integer 
+	Parameter O6_BASE_ADDR bound to: 268578816 - type: integer 
+	Parameter O6_BASE_REGION_LSB bound to: 12 - type: integer 
+	Parameter O7_BASE_ADDR bound to: 268582912 - type: integer 
+	Parameter O7_BASE_REGION_LSB bound to: 12 - type: integer 
+	Parameter O8_BASE_ADDR bound to: 268587008 - type: integer 
+	Parameter O8_BASE_REGION_LSB bound to: 12 - type: integer 
+	Parameter O9_BASE_ADDR bound to: 268644352 - type: integer 
+	Parameter O9_BASE_REGION_LSB bound to: 12 - type: integer 
+	Parameter O10_BASE_ADDR bound to: 268648448 - type: integer 
+	Parameter O10_BASE_REGION_LSB bound to: 12 - type: integer 
+	Parameter O11_BASE_ADDR bound to: 268652544 - type: integer 
+	Parameter O11_BASE_REGION_LSB bound to: 12 - type: integer 
+	Parameter O12_BASE_ADDR bound to: 285212672 - type: integer 
+	Parameter O12_BASE_REGION_LSB bound to: 24 - type: integer 
+	Parameter O13_BASE_ADDR bound to: 268697600 - type: integer 
+	Parameter O13_BASE_REGION_LSB bound to: 12 - type: integer 
+	Parameter O14_BASE_ADDR bound to: 268701696 - type: integer 
+	Parameter O14_BASE_REGION_LSB bound to: 12 - type: integer 
+	Parameter O15_BASE_ADDR bound to: 268705792 - type: integer 
+	Parameter O15_BASE_REGION_LSB bound to: 3 - type: integer 
+	Parameter OUTS_CNT_W bound to: 1 - type: integer 
+	Parameter AW bound to: 32 - type: integer 
+	Parameter DW bound to: 32 - type: integer 
+	Parameter CMD_CUT_READY bound to: 1 - type: integer 
+	Parameter RSP_CUT_READY bound to: 1 - type: integer 
+	Parameter CMD_DP bound to: 2 - type: integer 
+	Parameter RSP_DP bound to: 2 - type: integer 
+	Parameter USR_W bound to: 1 - type: integer 
+	Parameter CUT_READY bound to: 1 - type: integer 
+	Parameter MSKO bound to: 0 - type: integer 
+	Parameter DP bound to: 2 - type: integer 
+	Parameter DW bound to: 78 - type: integer 
+	Parameter CUT_READY bound to: 1 - type: integer 
+	Parameter MSKO bound to: 0 - type: integer 
+	Parameter DP bound to: 2 - type: integer 
+	Parameter DW bound to: 35 - type: integer 
+	Parameter AW bound to: 32 - type: integer 
+	Parameter DW bound to: 32 - type: integer 
+	Parameter FIFO_OUTS_NUM bound to: 1 - type: integer 
+	Parameter FIFO_CUT_READY bound to: 1 - type: integer 
+	Parameter SPLT_NUM bound to: 17 - type: integer 
+	Parameter SPLT_PTR_1HOT bound to: 1 - type: integer 
+	Parameter SPLT_PTR_W bound to: 17 - type: integer 
+	Parameter ALLOW_DIFF bound to: 0 - type: integer 
+	Parameter ALLOW_0CYCL_RSP bound to: 1 - type: integer 
+	Parameter VLD_MSK_PAYLOAD bound to: 1 - type: integer 
+	Parameter USR_W bound to: 1 - type: integer 
+	Parameter CUT_READY bound to: 1 - type: integer 
+	Parameter DP bound to: 1 - type: integer 
+	Parameter DW bound to: 17 - type: integer 
+	Parameter DW bound to: 17 - type: integer 
+	Parameter DW bound to: 65 - type: integer 
+	Parameter SYNC_DP bound to: 2 - type: integer 
+	Parameter DW bound to: 65 - type: integer 
+	Parameter DW bound to: 33 - type: integer 
+	Parameter SYNC_DP bound to: 2 - type: integer 
+	Parameter DW bound to: 33 - type: integer 
+	Parameter AW bound to: 32 - type: integer 
+	Parameter DW bound to: 32 - type: integer 
+	Parameter CUT_READY bound to: 1 - type: integer 
+	Parameter MSKO bound to: 0 - type: integer 
+	Parameter DP bound to: 1 - type: integer 
+	Parameter DW bound to: 32 - type: integer 
+	Parameter APB_ADDR_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/perips/apb_gpio/apb_gpio.v:132]
+INFO: [Synth 8-226] default block is never used [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/perips/apb_gpio/apb_gpio.v:193]
+	Parameter APB_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter DATA_WIDTH bound to: 9 - type: integer 
+	Parameter BUFFER_DEPTH bound to: 16 - type: integer 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter BUFFER_DEPTH bound to: 16 - type: integer 
+	Parameter TX_FIFO_DEPTH bound to: 16 - type: integer 
+	Parameter RX_FIFO_DEPTH bound to: 16 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/perips/apb_uart/apb_uart.v:181]
+	Parameter APB_ADDR_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/perips/apb_spi_master/apb_spi_master.v:124]
+	Parameter BUFFER_DEPTH bound to: 10 - type: integer 
+	Parameter APB_ADDR_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/perips/apb_spi_master/spi_master_apb_if.v:109]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter BUFFER_DEPTH bound to: 10 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/perips/apb_spi_master/spi_master_controller.v:172]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/perips/apb_spi_master/spi_master_controller.v:215]
+	Parameter APB_ADDR_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/perips/apb_i2c/apb_i2c.v:96]
+	Parameter APB_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter APB_ADDR_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/perips/apb_adv_timer/adv_timer_apb_if.v:626]
+	Parameter NUM_BITS bound to: 16 - type: integer 
+	Parameter N_EXTSIG bound to: 48 - type: integer 
+	Parameter EXTSIG_NUM bound to: 48 - type: integer 
+	Parameter AXI_FIFO_DP bound to: 2 - type: integer 
+	Parameter AXI_FIFO_CUT_READY bound to: 1 - type: integer 
+	Parameter AW bound to: 32 - type: integer 
+	Parameter FIFO_OUTS_NUM bound to: 1 - type: integer 
+	Parameter FIFO_CUT_READY bound to: 1 - type: integer 
+	Parameter DW bound to: 32 - type: integer 
+	Parameter CUT_READY bound to: 1 - type: integer 
+	Parameter MSKO bound to: 1 - type: integer 
+	Parameter DP bound to: 1 - type: integer 
+	Parameter DW bound to: 1 - type: integer 
+	Parameter CHNL_FIFO_DP bound to: 2 - type: integer 
+	Parameter CHNL_FIFO_CUT_READY bound to: 1 - type: integer 
+	Parameter AW bound to: 32 - type: integer 
+	Parameter DW bound to: 32 - type: integer 
+	Parameter CUT_READY bound to: 1 - type: integer 
+	Parameter MSKO bound to: 0 - type: integer 
+	Parameter DP bound to: 2 - type: integer 
+	Parameter DW bound to: 50 - type: integer 
+	Parameter DW bound to: 50 - type: integer 
+	Parameter CUT_READY bound to: 1 - type: integer 
+	Parameter MSKO bound to: 0 - type: integer 
+	Parameter DP bound to: 2 - type: integer 
+	Parameter DW bound to: 37 - type: integer 
+	Parameter DW bound to: 37 - type: integer 
+	Parameter CUT_READY bound to: 1 - type: integer 
+	Parameter MSKO bound to: 0 - type: integer 
+	Parameter DP bound to: 2 - type: integer 
+	Parameter DW bound to: 2 - type: integer 
+	Parameter AW bound to: 32 - type: integer 
+	Parameter DW bound to: 32 - type: integer 
+	Parameter ICB_FIFO_DP bound to: 2 - type: integer 
+	Parameter ICB_FIFO_CUT_READY bound to: 1 - type: integer 
+	Parameter AW bound to: 32 - type: integer 
+	Parameter DW bound to: 32 - type: integer 
+	Parameter SPLT_FIFO_OUTS_NUM bound to: 1 - type: integer 
+	Parameter SPLT_FIFO_CUT_READY bound to: 1 - type: integer 
+	Parameter O0_BASE_ADDR bound to: 0 - type: integer 
+	Parameter O0_BASE_REGION_LSB bound to: 12 - type: integer 
+	Parameter O1_BASE_ADDR bound to: 4096 - type: integer 
+	Parameter O1_BASE_REGION_LSB bound to: 12 - type: integer 
+	Parameter O2_BASE_ADDR bound to: 131072 - type: integer 
+	Parameter O2_BASE_REGION_LSB bound to: 17 - type: integer 
+	Parameter O3_BASE_ADDR bound to: 536870912 - type: integer 
+	Parameter O3_BASE_REGION_LSB bound to: 29 - type: integer 
+	Parameter O4_BASE_ADDR bound to: -2147483648 - type: integer 
+	Parameter O4_BASE_REGION_LSB bound to: 31 - type: integer 
+	Parameter O5_BASE_ADDR bound to: 1073741824 - type: integer 
+	Parameter O5_BASE_REGION_LSB bound to: 28 - type: integer 
+	Parameter O6_BASE_ADDR bound to: 0 - type: integer 
+	Parameter O6_BASE_REGION_LSB bound to: 0 - type: integer 
+	Parameter O7_BASE_ADDR bound to: 0 - type: integer 
+	Parameter O7_BASE_REGION_LSB bound to: 0 - type: integer 
+	Parameter AW bound to: 32 - type: integer 
+	Parameter DW bound to: 32 - type: integer 
+	Parameter FIFO_OUTS_NUM bound to: 1 - type: integer 
+	Parameter FIFO_CUT_READY bound to: 1 - type: integer 
+	Parameter SPLT_NUM bound to: 9 - type: integer 
+	Parameter SPLT_PTR_1HOT bound to: 1 - type: integer 
+	Parameter SPLT_PTR_W bound to: 9 - type: integer 
+	Parameter ALLOW_DIFF bound to: 0 - type: integer 
+	Parameter ALLOW_0CYCL_RSP bound to: 1 - type: integer 
+	Parameter VLD_MSK_PAYLOAD bound to: 1 - type: integer 
+	Parameter USR_W bound to: 1 - type: integer 
+	Parameter CUT_READY bound to: 1 - type: integer 
+	Parameter DP bound to: 1 - type: integer 
+	Parameter DW bound to: 9 - type: integer 
+	Parameter DW bound to: 9 - type: integer 
+	Parameter AW bound to: 12 - type: integer 
+	Parameter DW bound to: 32 - type: integer 
+	Parameter DP bound to: 1024 - type: integer 
+	Parameter AW bound to: 12 - type: integer 
+	Parameter DW bound to: 32 - type: integer 
+	Parameter DP bound to: 1024 - type: integer 
+	Parameter AXI_FIFO_DP bound to: 2 - type: integer 
+	Parameter AXI_FIFO_CUT_READY bound to: 1 - type: integer 
+	Parameter AW bound to: 32 - type: integer 
+	Parameter FIFO_OUTS_NUM bound to: 4 - type: integer 
+	Parameter FIFO_CUT_READY bound to: 1 - type: integer 
+	Parameter DW bound to: 32 - type: integer 
+	Parameter CUT_READY bound to: 1 - type: integer 
+	Parameter MSKO bound to: 1 - type: integer 
+	Parameter DP bound to: 4 - type: integer 
+	Parameter DW bound to: 1 - type: integer 
+	Parameter SUPPORT_JTAG_DTM bound to: 1 - type: integer 
+	Parameter ASYNC_FF_LEVELS bound to: 2 - type: integer 
+	Parameter PC_SIZE bound to: 32 - type: integer 
+	Parameter HART_NUM bound to: 1 - type: integer 
+	Parameter HART_ID_W bound to: 1 - type: integer 
+	Parameter ASYNC_FF_LEVELS bound to: 2 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/debug/sirv_jtag_dtm.v:237]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/debug/sirv_jtag_dtm.v:295]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/debug/sirv_jtag_dtm.v:308]
+	Parameter DW bound to: 41 - type: integer 
+	Parameter SYNC_DP bound to: 2 - type: integer 
+	Parameter DW bound to: 41 - type: integer 
+	Parameter DW bound to: 36 - type: integer 
+	Parameter SYNC_DP bound to: 2 - type: integer 
+	Parameter DW bound to: 36 - type: integer 
+	Parameter PC_SIZE bound to: 32 - type: integer 
+	Parameter DW bound to: 36 - type: integer 
+	Parameter SYNC_DP bound to: 2 - type: integer 
+	Parameter DW bound to: 41 - type: integer 
+	Parameter SYNC_DP bound to: 2 - type: integer 
+	Parameter DW bound to: 32 - type: integer 
+	Parameter SYNC_DP bound to: 2 - type: integer 
+	Parameter DW bound to: 65 - type: integer 
+	Parameter SYNC_DP bound to: 2 - type: integer 
+	Parameter ICB_FIFO_DP bound to: 0 - type: integer 
+	Parameter ICB_FIFO_CUT_READY bound to: 1 - type: integer 
+	Parameter AW bound to: 15 - type: integer 
+	Parameter DW bound to: 32 - type: integer 
+	Parameter SPLT_FIFO_OUTS_NUM bound to: 1 - type: integer 
+	Parameter SPLT_FIFO_CUT_READY bound to: 1 - type: integer 
+	Parameter O0_BASE_ADDR bound to: 15'b000001000000000 
+	Parameter O0_BASE_REGION_LSB bound to: 8 - type: integer 
+	Parameter OUTS_CNT_W bound to: 1 - type: integer 
+	Parameter AW bound to: 15 - type: integer 
+	Parameter DW bound to: 32 - type: integer 
+	Parameter CMD_CUT_READY bound to: 1 - type: integer 
+	Parameter RSP_CUT_READY bound to: 1 - type: integer 
+	Parameter CMD_DP bound to: 0 - type: integer 
+	Parameter RSP_DP bound to: 0 - type: integer 
+	Parameter USR_W bound to: 1 - type: integer 
+	Parameter CUT_READY bound to: 1 - type: integer 
+	Parameter MSKO bound to: 0 - type: integer 
+	Parameter DP bound to: 0 - type: integer 
+	Parameter DW bound to: 61 - type: integer 
+	Parameter CUT_READY bound to: 1 - type: integer 
+	Parameter MSKO bound to: 0 - type: integer 
+	Parameter DP bound to: 0 - type: integer 
+	Parameter DW bound to: 35 - type: integer 
+	Parameter AW bound to: 15 - type: integer 
+	Parameter DW bound to: 32 - type: integer 
+	Parameter FIFO_OUTS_NUM bound to: 1 - type: integer 
+	Parameter FIFO_CUT_READY bound to: 1 - type: integer 
+	Parameter SPLT_NUM bound to: 2 - type: integer 
+	Parameter SPLT_PTR_1HOT bound to: 1 - type: integer 
+	Parameter SPLT_PTR_W bound to: 2 - type: integer 
+	Parameter ALLOW_DIFF bound to: 0 - type: integer 
+	Parameter ALLOW_0CYCL_RSP bound to: 1 - type: integer 
+	Parameter VLD_MSK_PAYLOAD bound to: 1 - type: integer 
+	Parameter USR_W bound to: 1 - type: integer 
+	Parameter CUT_READY bound to: 1 - type: integer 
+	Parameter DP bound to: 1 - type: integer 
+	Parameter DW bound to: 2 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element T_1514_reg was removed.  [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/perips/sirv_tlwidthwidget_qspi.v:386]
+WARNING: [Synth 8-6014] Unused sequential element a_opcode_reg was removed.  [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/perips/sirv_flash_qspi.v:2220]
+WARNING: [Synth 8-6014] Unused sequential element a_param_reg was removed.  [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/perips/sirv_flash_qspi.v:2221]
+WARNING: [Synth 8-6014] Unused sequential element a_mask_reg was removed.  [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/perips/sirv_flash_qspi.v:2225]
+WARNING: [Synth 8-6014] Unused sequential element a_data_reg was removed.  [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/perips/sirv_flash_qspi.v:2226]
+WARNING: [Synth 8-6014] Unused sequential element do_tx_reg was removed.  [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/perips/apb_spi_master/spi_master_controller.v:468]
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_read_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_read_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_index_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_index_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_data_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_data_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_mask_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_mask_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_extra_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_extra_reg" dissolved into registers
+WARNING: [Synth 8-7129] Port reset in module sirv_DeglitchShiftRegister is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_cfg_write_bits[31] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_cfg_write_bits[30] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_cfg_write_bits[29] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_cfg_write_bits[27] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_cfg_write_bits[26] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_cfg_write_bits[25] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_cfg_write_bits[24] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_cfg_write_bits[23] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_cfg_write_bits[22] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_cfg_write_bits[21] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_cfg_write_bits[20] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_cfg_write_bits[19] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_cfg_write_bits[18] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_cfg_write_bits[17] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_cfg_write_bits[16] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_cfg_write_bits[15] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_cfg_write_bits[14] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_cfg_write_bits[11] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_cfg_write_bits[10] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_cfg_write_bits[7] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_cfg_write_bits[6] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_cfg_write_bits[5] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_cfg_write_bits[4] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_countLo_write_bits[31] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_countHi_write_bits[31] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_countHi_write_bits[30] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_countHi_write_bits[29] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_countHi_write_bits[28] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_countHi_write_bits[27] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_countHi_write_bits[26] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_countHi_write_bits[25] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_countHi_write_bits[24] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_countHi_write_bits[23] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_countHi_write_bits[22] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_countHi_write_bits[21] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_countHi_write_bits[20] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_countHi_write_bits[19] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_countHi_write_bits[18] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_countHi_write_bits[17] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_countHi_write_bits[16] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_countHi_write_bits[15] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_countHi_write_bits[14] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_countHi_write_bits[13] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_countHi_write_bits[12] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_countHi_write_bits[11] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_countHi_write_bits[10] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_countHi_write_bits[9] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_countHi_write_bits[8] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_countHi_write_bits[7] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_countHi_write_bits[6] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_countHi_write_bits[5] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_countHi_write_bits[4] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_countHi_write_bits[3] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_countHi_write_bits[2] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_countHi_write_bits[1] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_countHi_write_bits[0] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_s_write_bits[15] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_s_write_bits[14] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_s_write_bits[13] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_s_write_bits[12] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_s_write_bits[11] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_s_write_bits[10] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_s_write_bits[9] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_s_write_bits[8] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_s_write_bits[7] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_s_write_bits[6] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_s_write_bits[5] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_s_write_bits[4] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_s_write_bits[3] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_s_write_bits[2] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_s_write_bits[1] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_s_write_bits[0] in module sirv_wdog is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_cause_write_bits[31] in module sirv_pmu_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_cause_write_bits[30] in module sirv_pmu_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_cause_write_bits[29] in module sirv_pmu_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_cause_write_bits[28] in module sirv_pmu_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_cause_write_bits[27] in module sirv_pmu_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_cause_write_bits[26] in module sirv_pmu_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_cause_write_bits[25] in module sirv_pmu_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_cause_write_bits[24] in module sirv_pmu_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_cause_write_bits[23] in module sirv_pmu_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_cause_write_bits[22] in module sirv_pmu_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_cause_write_bits[21] in module sirv_pmu_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_cause_write_bits[20] in module sirv_pmu_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_cause_write_bits[19] in module sirv_pmu_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_cause_write_bits[18] in module sirv_pmu_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_cause_write_bits[17] in module sirv_pmu_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_cause_write_bits[16] in module sirv_pmu_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_cause_write_bits[15] in module sirv_pmu_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_cause_write_bits[14] in module sirv_pmu_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_cause_write_bits[13] in module sirv_pmu_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_cause_write_bits[12] in module sirv_pmu_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_cause_write_bits[11] in module sirv_pmu_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_cause_write_bits[10] in module sirv_pmu_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_cause_write_bits[9] in module sirv_pmu_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_cause_write_bits[8] in module sirv_pmu_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_cause_write_bits[7] in module sirv_pmu_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_cause_write_bits[6] in module sirv_pmu_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_regs_cause_write_bits[5] in module sirv_pmu_core is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 1708.590 ; gain = 731.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 1708.590 ; gain = 731.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 1708.590 ; gain = 731.316
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.621 . Memory (MB): peak = 1710.832 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 73 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/Vivado_Workspace/e203_2/e203/e203.gen/sources_1/ip/mmcm/mmcm/mmcm_in_context.xdc] for cell 'ip_mmcm'
+Finished Parsing XDC File [e:/Vivado_Workspace/e203_2/e203/e203.gen/sources_1/ip/mmcm/mmcm/mmcm_in_context.xdc] for cell 'ip_mmcm'
+Parsing XDC File [e:/Vivado_Workspace/e203_2/e203/e203.gen/sources_1/ip/reset_sys/reset_sys/reset_sys_in_context.xdc] for cell 'ip_reset_sys'
+Finished Parsing XDC File [e:/Vivado_Workspace/e203_2/e203/e203.gen/sources_1/ip/reset_sys/reset_sys/reset_sys_in_context.xdc] for cell 'ip_reset_sys'
+Parsing XDC File [E:/Vivado_Workspace/e203_2/e203/e203.srcs/constrs_1/imports/constrs/nuclei-config.xdc]
+Finished Parsing XDC File [E:/Vivado_Workspace/e203_2/e203/e203.srcs/constrs_1/imports/constrs/nuclei-config.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Vivado_Workspace/e203_2/e203/e203.srcs/constrs_1/imports/constrs/nuclei-config.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [E:/Vivado_Workspace/e203_2/e203/e203.srcs/constrs_1/imports/constrs/nuclei-master.xdc]
+INFO: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: dut_io_pads_jtag_TCK_i_ival). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [E:/Vivado_Workspace/e203_2/e203/e203.srcs/constrs_1/imports/constrs/nuclei-master.xdc:15]
+Finished Parsing XDC File [E:/Vivado_Workspace/e203_2/e203/e203.srcs/constrs_1/imports/constrs/nuclei-master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Vivado_Workspace/e203_2/e203/e203.srcs/constrs_1/imports/constrs/nuclei-master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1833.617 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 73 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 73 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.093 . Memory (MB): peak = 1833.617 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [E:/Vivado/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:34 . Memory (MB): peak = 1833.617 ; gain = 856.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg484-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:34 . Memory (MB): peak = 1833.617 ; gain = 856.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  e:/Vivado_Workspace/e203_2/e203/e203.gen/sources_1/ip/mmcm/mmcm/mmcm_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  e:/Vivado_Workspace/e203_2/e203/e203.gen/sources_1/ip/mmcm/mmcm/mmcm_in_context.xdc, line 5).
+WARNING: set_property CLOCK_DEDICATED_ROUTE could not find object (constraint file  E:/Vivado_Workspace/e203_2/e203/e203.srcs/constrs_1/imports/constrs/nuclei-master.xdc, line 16).
+Applied set_property KEEP_HIERARCHY = SOFT for ip_mmcm. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for ip_reset_sys. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:34 . Memory (MB): peak = 1833.617 ; gain = 856.344
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'CS_reg' in module 'uart_rx'
+INFO: [Synth 8-802] inferred FSM for state register 'CS_reg' in module 'uart_tx'
+INFO: [Synth 8-802] inferred FSM for state register 'rx_CS_reg' in module 'spi_master_rx'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'spi_master_controller'
+INFO: [Synth 8-802] inferred FSM for state register 'c_state_reg' in module 'i2c_master_bit_ctrl'
+INFO: [Synth 8-802] inferred FSM for state register 'c_state_reg' in module 'i2c_master_byte_ctrl'
+INFO: [Synth 8-802] inferred FSM for state register 'jtagStateReg_reg' in module 'sirv_jtag_dtm'
+WARNING: [Synth 8-6841] Block RAM (mem[1].non_last.mem_r_reg) originally specified as a Byte Wide Write Enable RAM cannot take advantage of ByteWide feature and is implemented with single write enable per RAM due to following reason.
+(address width (15) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired.)
+WARNING: [Synth 8-6841] Block RAM (mem[1].non_last.mem_r_reg) originally specified as a Byte Wide Write Enable RAM cannot take advantage of ByteWide feature and is implemented with single write enable per RAM due to following reason.
+(address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired.)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                              000
+               START_BIT |                              001 |                              001
+                    DATA |                              010 |                              010
+               SAVE_DATA |                              011 |                              011
+                  PARITY |                              100 |                              100
+                STOP_BIT |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'CS_reg' using encoding 'sequential' in module 'uart_rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                              000
+               START_BIT |                              001 |                              001
+                    DATA |                              010 |                              010
+                  PARITY |                              011 |                              011
+          STOP_BIT_FIRST |                              100 |                              100
+           STOP_BIT_LAST |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'CS_reg' using encoding 'sequential' in module 'uart_tx'
+WARNING: [Synth 8-327] inferring latch for variable 'fifo_tx_data_reg' [E:/Vivado_Workspace/e203_2/Source Code/rtl/e203/perips/apb_uart/apb_uart.v:138]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+                 RECEIVE |                               01 |                               01
+          WAIT_FIFO_DONE |                               10 |                               11
+               WAIT_FIFO |                               11 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rx_CS_reg' using encoding 'sequential' in module 'spi_master_rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                            00000
+                     CMD |                              001 |                            00001
+                    ADDR |                              010 |                            00010
+                   DUMMY |                              011 |                            00100
+                 DATA_RX |                              100 |                            00110
+               WAIT_EDGE |                              101 |                            00111
+                 DATA_TX |                              110 |                            00101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'spi_master_controller'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |               000000000000000001 |               000000000000000000
+                 start_a |               000000000000000010 |               000000000000000001
+                 start_b |               000000000000000100 |               000000000000000010
+                 start_c |               000000000000001000 |               000000000000000100
+                 start_d |               000000000000010000 |               000000000000001000
+                 start_e |               000000000000100000 |               000000000000010000
+                  stop_a |               000000000001000000 |               000000000000100000
+                  stop_b |               000000000010000000 |               000000000001000000
+                  stop_c |               000000000100000000 |               000000000010000000
+                  stop_d |               000000001000000000 |               000000000100000000
+                    wr_a |               000000010000000000 |               000010000000000000
+                    wr_b |               000000100000000000 |               000100000000000000
+                    wr_c |               000001000000000000 |               001000000000000000
+                    wr_d |               000010000000000000 |               010000000000000000
+                    rd_a |               000100000000000000 |               000000001000000000
+                    rd_b |               001000000000000000 |               000000010000000000
+                    rd_c |               010000000000000000 |               000000100000000000
+                    rd_d |               100000000000000000 |               000001000000000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'c_state_reg' using encoding 'one-hot' in module 'i2c_master_bit_ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 ST_IDLE |                              000 |                            00000
+                ST_START |                              001 |                            00001
+                 ST_READ |                              010 |                            00010
+                ST_WRITE |                              011 |                            00100
+                  ST_ACK |                              100 |                            01000
+                 ST_STOP |                              101 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'c_state_reg' using encoding 'sequential' in module 'i2c_master_byte_ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+        TEST_LOGIC_RESET |                 0000000000000001 |                             0000
+           RUN_TEST_IDLE |                 0000000000000010 |                             0001
+               SELECT_DR |                 0000000000000100 |                             0010
+               SELECT_IR |                 0000000000001000 |                             1001
+              CAPTURE_IR |                 0000000000010000 |                             1010
+                SHIFT_IR |                 0000000000100000 |                             1011
+                EXIT1_IR |                 0000000001000000 |                             1100
+                PAUSE_IR |                 0000000010000000 |                             1101
+                EXIT2_IR |                 0000000100000000 |                             1110
+               UPDATE_IR |                 0000001000000000 |                             1111
+              CAPTURE_DR |                 0000010000000000 |                             0011
+                SHIFT_DR |                 0000100000000000 |                             0100
+                EXIT1_DR |                 0001000000000000 |                             0101
+                PAUSE_DR |                 0010000000000000 |                             0110
+                EXIT2_DR |                 0100000000000000 |                             0111
+               UPDATE_DR |                 1000000000000000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'jtagStateReg_reg' using encoding 'one-hot' in module 'sirv_jtag_dtm'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:41 . Memory (MB): peak = 1833.617 ; gain = 856.344
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_exu/u_e203_exu_fpu/ffused_adder_en_dfflr' (sirv_gnrl_dfflr__parameterized0) to 'dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_cpu/u_e203_core/u_e203_exu/u_e203_exu_fpu/ffused_done_dfflr'
+RAM Pipeline Warning: Read Address Register Found For RAM mem[1].non_last.mem_r_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM mem[1].non_last.mem_r_reg. We will not be able to pipeline it. This may degrade performance. 
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   64 Bit       Adders := 1     
+	   2 Input   42 Bit       Adders := 1     
+	   3 Input   35 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 21    
+	   2 Input   31 Bit       Adders := 2     
+	   2 Input   26 Bit       Adders := 1     
+	   2 Input   25 Bit       Adders := 6     
+	   2 Input   24 Bit       Adders := 8     
+	   2 Input   16 Bit       Adders := 17    
+	   2 Input   14 Bit       Adders := 2     
+	   2 Input   12 Bit       Adders := 1     
+	   5 Input    9 Bit       Adders := 6     
+	   3 Input    8 Bit       Adders := 4     
+	   2 Input    8 Bit       Adders := 11    
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 3     
+	   2 Input    5 Bit       Adders := 12    
+	   2 Input    4 Bit       Adders := 23    
+	   3 Input    3 Bit       Adders := 2     
+	   2 Input    3 Bit       Adders := 12    
+	   2 Input    2 Bit       Adders := 7     
+	   2 Input    1 Bit       Adders := 4     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input     16 Bit         XORs := 1     
+	   2 Input     10 Bit         XORs := 64    
+	   2 Input      1 Bit         XORs := 63    
++---Registers : 
+	              192 Bit    Registers := 2     
+	               93 Bit    Registers := 1     
+	               80 Bit    Registers := 3     
+	               78 Bit    Registers := 5     
+	               65 Bit    Registers := 2     
+	               56 Bit    Registers := 1     
+	               50 Bit    Registers := 8     
+	               45 Bit    Registers := 1     
+	               42 Bit    Registers := 1     
+	               41 Bit    Registers := 4     
+	               37 Bit    Registers := 4     
+	               36 Bit    Registers := 2     
+	               35 Bit    Registers := 9     
+	               33 Bit    Registers := 4     
+	               32 Bit    Registers := 222   
+	               30 Bit    Registers := 3     
+	               26 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	               17 Bit    Registers := 2     
+	               16 Bit    Registers := 85    
+	               15 Bit    Registers := 1     
+	               14 Bit    Registers := 2     
+	               12 Bit    Registers := 3     
+	               10 Bit    Registers := 2     
+	                9 Bit    Registers := 65    
+	                8 Bit    Registers := 97    
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 10    
+	                5 Bit    Registers := 27    
+	                4 Bit    Registers := 48    
+	                3 Bit    Registers := 97    
+	                2 Bit    Registers := 82    
+	                1 Bit    Registers := 707   
++---RAMs : 
+	            2048K Bit	(32768 X 64 bit)          RAMs := 1     
+	            2048K Bit	(65536 X 32 bit)          RAMs := 1     
+	               64 Bit	(8 X 8 bit)          RAMs := 2     
++---Muxes : 
+	  16 Input  192 Bit        Muxes := 2     
+	   2 Input   93 Bit        Muxes := 1     
+	   4 Input   80 Bit        Muxes := 3     
+	   2 Input   80 Bit        Muxes := 9     
+	   2 Input   65 Bit        Muxes := 2     
+	   2 Input   64 Bit        Muxes := 15    
+	   2 Input   56 Bit        Muxes := 1     
+	   2 Input   47 Bit        Muxes := 6     
+	   3 Input   43 Bit        Muxes := 1     
+	   2 Input   42 Bit        Muxes := 3     
+	   2 Input   41 Bit        Muxes := 2     
+	   4 Input   41 Bit        Muxes := 2     
+	   3 Input   41 Bit        Muxes := 1     
+	   2 Input   35 Bit        Muxes := 4     
+	   2 Input   34 Bit        Muxes := 1     
+	   2 Input   33 Bit        Muxes := 14    
+	   2 Input   32 Bit        Muxes := 143   
+	   4 Input   32 Bit        Muxes := 9     
+	   3 Input   32 Bit        Muxes := 1     
+	   6 Input   32 Bit        Muxes := 1     
+	  47 Input   32 Bit        Muxes := 1     
+	   5 Input   32 Bit        Muxes := 2     
+	   2 Input   31 Bit        Muxes := 7     
+	   2 Input   30 Bit        Muxes := 3     
+	   2 Input   27 Bit        Muxes := 1     
+	   2 Input   26 Bit        Muxes := 4     
+	  26 Input   25 Bit        Muxes := 2     
+	   2 Input   25 Bit        Muxes := 2     
+	   2 Input   24 Bit        Muxes := 18    
+	   2 Input   23 Bit        Muxes := 2     
+	  24 Input   18 Bit        Muxes := 2     
+	   2 Input   17 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 97    
+	   7 Input   16 Bit        Muxes := 4     
+	  16 Input   16 Bit        Muxes := 1     
+	   2 Input   14 Bit        Muxes := 4     
+	   2 Input   12 Bit        Muxes := 2     
+	   2 Input    9 Bit        Muxes := 16    
+	   2 Input    8 Bit        Muxes := 79    
+	   5 Input    8 Bit        Muxes := 4     
+	   4 Input    8 Bit        Muxes := 3     
+	   6 Input    8 Bit        Muxes := 3     
+	   2 Input    7 Bit        Muxes := 1     
+	   7 Input    7 Bit        Muxes := 2     
+	   2 Input    6 Bit        Muxes := 5     
+	   2 Input    5 Bit        Muxes := 52    
+	   4 Input    5 Bit        Muxes := 1     
+	  14 Input    5 Bit        Muxes := 1     
+	  26 Input    5 Bit        Muxes := 2     
+	   7 Input    5 Bit        Muxes := 4     
+	   2 Input    4 Bit        Muxes := 75    
+	   3 Input    4 Bit        Muxes := 3     
+	   4 Input    4 Bit        Muxes := 4     
+	  10 Input    4 Bit        Muxes := 1     
+	   6 Input    4 Bit        Muxes := 2     
+	   8 Input    4 Bit        Muxes := 3     
+	   2 Input    3 Bit        Muxes := 127   
+	   6 Input    3 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 2     
+	   4 Input    3 Bit        Muxes := 4     
+	   7 Input    3 Bit        Muxes := 2     
+	  32 Input    3 Bit        Muxes := 2     
+	  15 Input    3 Bit        Muxes := 2     
+	   9 Input    3 Bit        Muxes := 3     
+	  10 Input    3 Bit        Muxes := 3     
+	   2 Input    2 Bit        Muxes := 114   
+	   3 Input    2 Bit        Muxes := 6     
+	   4 Input    2 Bit        Muxes := 4     
+	   7 Input    2 Bit        Muxes := 2     
+	   5 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 1020  
+	   4 Input    1 Bit        Muxes := 35    
+	  32 Input    1 Bit        Muxes := 1     
+	  15 Input    1 Bit        Muxes := 12    
+	  47 Input    1 Bit        Muxes := 42    
+	  48 Input    1 Bit        Muxes := 4     
+	   8 Input    1 Bit        Muxes := 72    
+	   7 Input    1 Bit        Muxes := 16    
+	   5 Input    1 Bit        Muxes := 13    
+	  18 Input    1 Bit        Muxes := 10    
+	   6 Input    1 Bit        Muxes := 69    
+	   3 Input    1 Bit        Muxes := 6     
+	 128 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP product, operation Mode is: A*B.
+DSP Report: operator product is absorbed into DSP product.
+DSP Report: operator product is absorbed into DSP product.
+DSP Report: Generating DSP product, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator product is absorbed into DSP product.
+DSP Report: operator product is absorbed into DSP product.
+DSP Report: Generating DSP product, operation Mode is: A*B.
+DSP Report: operator product is absorbed into DSP product.
+DSP Report: operator product is absorbed into DSP product.
+DSP Report: Generating DSP product, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator product is absorbed into DSP product.
+DSP Report: operator product is absorbed into DSP product.
+DSP Report: Generating DSP product, operation Mode is: A*B.
+DSP Report: operator product is absorbed into DSP product.
+DSP Report: operator product is absorbed into DSP product.
+DSP Report: Generating DSP product, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator product is absorbed into DSP product.
+DSP Report: operator product is absorbed into DSP product.
+DSP Report: Generating DSP product, operation Mode is: A*B.
+DSP Report: operator product is absorbed into DSP product.
+DSP Report: operator product is absorbed into DSP product.
+DSP Report: Generating DSP product, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator product is absorbed into DSP product.
+DSP Report: operator product is absorbed into DSP product.
+DSP Report: Generating DSP x3/product, operation Mode is: A*B.
+DSP Report: operator x3/product is absorbed into DSP x3/product.
+DSP Report: operator x3/product is absorbed into DSP x3/product.
+DSP Report: Generating DSP x3/product, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x3/product is absorbed into DSP x3/product.
+DSP Report: operator x3/product is absorbed into DSP x3/product.
+DSP Report: Generating DSP x4/product, operation Mode is: A*B.
+DSP Report: operator x4/product is absorbed into DSP x4/product.
+DSP Report: operator x4/product is absorbed into DSP x4/product.
+DSP Report: Generating DSP x4/product, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x4/product is absorbed into DSP x4/product.
+DSP Report: operator x4/product is absorbed into DSP x4/product.
+RAM Pipeline Warning: Read Address Register Found For RAM u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg. We will not be able to pipeline it. This may degrade performance. 
+WARNING: [Synth 8-6841] Block RAM (u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg) originally specified as a Byte Wide Write Enable RAM cannot take advantage of ByteWide feature and is implemented with single write enable per RAM due to following reason.
+(address width (15) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired.)
+RAM Pipeline Warning: Read Address Register Found For RAM u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg. We will not be able to pipeline it. This may degrade performance. 
+WARNING: [Synth 8-6841] Block RAM (u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg) originally specified as a Byte Wide Write Enable RAM cannot take advantage of ByteWide feature and is implemented with single write enable per RAM due to following reason.
+(address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired.)
+RAM Pipeline Warning: Read Address Register Found For RAM u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg. We will not be able to pipeline it. This may degrade performance. 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:03:53 . Memory (MB): peak = 2387.164 ; gain = 1409.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++--------------+----------------------+---------------+----------------+
+|Module Name   | RTL Object           | Depth x Width | Implemented As | 
++--------------+----------------------+---------------+----------------+
+|sirv_mrom     | mask_rom             | 1024x4        | LUT            | 
+|sirv_mrom_top | u_sirv_mrom/mask_rom | 1024x4        | LUT            | 
++--------------+----------------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping Report (see note below)
++-----------------------------------------------------------------------+-------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                                                            | RTL Object                                                                    | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-----------------------------------------------------------------------+-------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams  | u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg | 32 K x 64(READ_FIRST)  | W |   | 32 K x 64(WRITE_FIRST) |   | R | Port A and B     | 0      | 64     | 
+|\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams  | u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg | 64 K x 32(READ_FIRST)  | W |   | 64 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 64     | 
++-----------------------------------------------------------------------+-------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++-----------------------------------------+------------------------------------+-----------+----------------------+-------------+
+|Module Name                              | RTL Object                         | Inference | Size (Depth x Width) | Primitives  | 
++-----------------------------------------+------------------------------------+-----------+----------------------+-------------+
+|u_e203_subsys_peripsi_3/u_sirv_qspi0_top | u_sirv_flash_qspi/fifo/rxq/ram_reg | Implied   | 8 x 8                | RAM32M x 2  | 
+|u_e203_subsys_peripsi_3/u_sirv_qspi0_top | u_sirv_flash_qspi/fifo/txq/ram_reg | Implied   | 8 x 8                | RAM32M x 2  | 
++-----------------------------------------+------------------------------------+-----------+----------------------+-------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++---------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name    | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++---------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Multiplication | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Multiplication | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Multiplication | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Multiplication | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Multiplication | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Multiplication | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Multiplication | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Multiplication | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Multiplication | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Multiplication | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Multiplication | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Multiplication | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++---------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-565] redefining clock 'sys_clk_pin'
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:04:00 . Memory (MB): peak = 2387.164 ; gain = 1409.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:04:18 . Memory (MB): peak = 2387.164 ; gain = 1409.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++-----------------------------------------------------------------------+-------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                                                            | RTL Object                                                                    | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-----------------------------------------------------------------------+-------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams  | u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg | 32 K x 64(READ_FIRST)  | W |   | 32 K x 64(WRITE_FIRST) |   | R | Port A and B     | 0      | 64     | 
+|\dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams  | u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg | 64 K x 32(READ_FIRST)  | W |   | 64 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 64     | 
++-----------------------------------------------------------------------+-------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+
+Distributed RAM: Final Mapping Report
++-----------------------------------------+------------------------------------+-----------+----------------------+-------------+
+|Module Name                              | RTL Object                         | Inference | Size (Depth x Width) | Primitives  | 
++-----------------------------------------+------------------------------------+-----------+----------------------+-------------+
+|u_e203_subsys_peripsi_3/u_sirv_qspi0_top | u_sirv_flash_qspi/fifo/rxq/ram_reg | Implied   | 8 x 8                | RAM32M x 2  | 
+|u_e203_subsys_peripsi_3/u_sirv_qspi0_top | u_sirv_flash_qspi/fifo/txq/ram_reg | Implied   | 8 x 8                | RAM32M x 2  | 
++-----------------------------------------+------------------------------------+-----------+----------------------+-------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_0_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_0_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_0_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_0_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_1_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_1_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_1_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_1_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_1_0_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_1_0_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_1_0_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_1_0_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_2_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_2_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_2_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_2_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_2_0_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_2_0_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_2_0_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_2_0_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_3_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_3_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_3_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_3_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_3_0_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_3_0_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_3_0_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_3_0_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_4_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_4_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_4_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_4_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_4_0_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_4_0_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_4_0_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_4_0_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_5_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_5_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_5_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_5_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_5_0_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_5_0_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_5_0_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_5_0_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_6_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_6_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_6_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_6_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_6_0_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_6_0_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_6_0_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_6_0_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_7_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_7_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_7_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_7_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_7_0_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_7_0_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_7_0_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_itcm_ram/u_e203_itcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_7_0_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_0_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_1_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_1_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_1_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_1_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_1_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_1_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_1_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_1_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_2_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_2_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_2_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_2_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_2_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_2_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_2_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_2_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_3_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_3_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_3_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_3_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_3_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_3_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_3_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dut/u_e203_subsys_top/u_e203_subsys_main/u_e203_cpu_top/u_e203_srams/u_e203_dtcm_ram/u_e203_dtcm_gnrl_ram/u_sirv_sim_ram/mem[1].non_last.mem_r_reg_3_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:53 ; elapsed = 00:04:29 . Memory (MB): peak = 2387.164 ; gain = 1409.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:54 ; elapsed = 00:04:33 . Memory (MB): peak = 2387.164 ; gain = 1409.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:54 ; elapsed = 00:04:33 . Memory (MB): peak = 2387.164 ; gain = 1409.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:54 ; elapsed = 00:04:37 . Memory (MB): peak = 2387.164 ; gain = 1409.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:54 ; elapsed = 00:04:37 . Memory (MB): peak = 2387.164 ; gain = 1409.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:54 ; elapsed = 00:04:38 . Memory (MB): peak = 2387.164 ; gain = 1409.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:54 ; elapsed = 00:04:38 . Memory (MB): peak = 2387.164 ; gain = 1409.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++---------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name    | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++---------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Multiplication | A*B          | 24     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Multiplication | PCIN>>17+A*B | 24     | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Multiplication | A*B          | 24     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Multiplication | PCIN>>17+A*B | 24     | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Multiplication | A*B          | 24     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Multiplication | PCIN>>17+A*B | 24     | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Multiplication | A*B          | 24     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Multiplication | PCIN>>17+A*B | 24     | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Multiplication | A*B          | 24     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Multiplication | PCIN>>17+A*B | 24     | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Multiplication | A*B          | 24     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Multiplication | PCIN>>17+A*B | 24     | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++---------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |mmcm          |         1|
+|2     |reset_sys     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |mmcm      |     1|
+|2     |reset_sys |     1|
+|3     |BUFG      |     3|
+|4     |CARRY4    |   544|
+|5     |DSP48E1   |    12|
+|6     |LUT1      |   403|
+|7     |LUT2      |  1224|
+|8     |LUT3      |  1537|
+|9     |LUT4      |  3403|
+|10    |LUT5      |  3114|
+|11    |LUT6      |  8496|
+|12    |MUXF7     |   919|
+|13    |MUXF8     |   261|
+|14    |PULLUP    |     7|
+|15    |RAM32M    |     2|
+|16    |RAM32X1D  |     4|
+|17    |RAMB36E1  |   128|
+|20    |FDCE      |  8517|
+|21    |FDPE      |   418|
+|22    |FDRE      |  3861|
+|23    |FDSE      |     1|
+|24    |LD        |    24|
+|25    |IBUF      |     3|
+|26    |IOBUF     |    73|
+|27    |OBUF      |     4|
++------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:54 ; elapsed = 00:04:38 . Memory (MB): peak = 2387.164 ; gain = 1409.891
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:47 ; elapsed = 00:04:28 . Memory (MB): peak = 2387.164 ; gain = 1284.863
+Synthesis Optimization Complete : Time (s): cpu = 00:00:54 ; elapsed = 00:04:38 . Memory (MB): peak = 2387.164 ; gain = 1409.891
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.576 . Memory (MB): peak = 2387.164 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1967 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2387.164 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 103 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 73 instances
+  LD => LDCE: 24 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 2 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
+
+Synth Design complete, checksum: 8b0035a5
+INFO: [Common 17-83] Releasing license: Synthesis
+357 Infos, 140 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:57 ; elapsed = 00:04:53 . Memory (MB): peak = 2387.164 ; gain = 1840.883
+INFO: [Common 17-1381] The checkpoint 'E:/Vivado_Workspace/e203_2/e203/e203.runs/synth_1/system.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file system_utilization_synth.rpt -pb system_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat May 27 17:38:21 2023...

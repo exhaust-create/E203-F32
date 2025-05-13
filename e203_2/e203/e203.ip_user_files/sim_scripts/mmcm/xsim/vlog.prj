@@ -1,0 +1,6 @@
+verilog xil_defaultlib --include "../../../../e203.gen/sources_1/ip/mmcm" \
+"../../../../e203.gen/sources_1/ip/mmcm/mmcm_sim_netlist.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

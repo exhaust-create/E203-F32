@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Wed May 17 15:10:51 2023
+# Process ID: 14852
+# Current directory: E:/Vivado_Workspace/e203_2/e203/e203.runs/mmcm_synth_1
+# Command line: vivado.exe -log mmcm.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mmcm.tcl
+# Log file: E:/Vivado_Workspace/e203_2/e203/e203.runs/mmcm_synth_1/mmcm.vds
+# Journal file: E:/Vivado_Workspace/e203_2/e203/e203.runs/mmcm_synth_1\vivado.jou
+# Running On: MyLaptop, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 14, Host memory: 16911 MB
+#-----------------------------------------------------------
+source mmcm.tcl -notrace

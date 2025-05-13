@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../e203.gen/sources_1/ip/reset_sys/reset_sys_sim_netlist.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

@@ -1,0 +1,4 @@
+xpm_cdc.sv,systemverilog,xpm,../../../../../../../Vivado/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv,
+xpm_VCOMP.vhd,vhdl,xpm,../../../../../../../Vivado/Vivado/2022.2/data/ip/xpm/xpm_VCOMP.vhd,
+reset_sys_sim_netlist.v,verilog,xil_defaultlib,../../../../e203.gen/sources_1/ip/reset_sys/reset_sys_sim_netlist.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v
