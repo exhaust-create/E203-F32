@@ -1,6 +1,6 @@
 本文用于介绍如何在 Vivado 上进行单精度浮点运算的功能仿真。作者借助 Whetstone 实现该操作。编译器使用 Nuclei Studio IDE。
 
-在路径```./Software_Cde/e203Whetstone_test/application```中找到文件 *whets.c*，打开并将里面的几个变量修改成如下代码所示：
+在路径```./Software_Code/e203Whetstone_test/application```中找到文件 *whets.c*，打开并将里面的几个变量修改成如下代码所示：
 ```
 count = 1;
 x100 = 50;
